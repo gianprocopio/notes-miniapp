@@ -35,9 +35,7 @@ const NoteForm = ({notes, setNotes}) => {
             category: '💻Work',
             priority: 'High',
             description: ''
-        })
-        console.log(notes);
-        
+        })        
     }
     
     const priorityOptions = [
