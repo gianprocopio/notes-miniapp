@@ -6,7 +6,7 @@ const NoteForm = ({notes, setNotes}) => {
     const [formData, setFormData] = useState({
         title: '',
         category: '💻Work',
-        priority: '🔴High',
+        priority: 'High',
         description: ''
     })
 
@@ -33,9 +33,11 @@ const NoteForm = ({notes, setNotes}) => {
         setFormData({
             title: '',
             category: '💻Work',
-            priority: '🔴High',
+            priority: 'High',
             description: ''
         })
+        console.log(notes);
+        
     }
     
     const priorityOptions = [
@@ -118,7 +120,7 @@ const NoteForm = ({notes, setNotes}) => {
                 handleChange={handleChange}
                 type="textarea"
             />
-            
+
             <button 
             className="w-full bg-purple-500 text-white py-2 rounded-lg cursor-pointer hover:bg-purple-600 transition-all"
             >
